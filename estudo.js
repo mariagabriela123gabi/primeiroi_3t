@@ -1,3 +1,6 @@
+// alert("Oi! Eu sou o Alert");
+// document.write("Estou na página.");
+// console.log("Eu estou no console.");
 let tabuada = 5;
 function alo(){
     document.write("<h1>Tabuada do " + tabuada + "</h1>");
