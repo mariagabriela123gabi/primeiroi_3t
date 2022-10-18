@@ -37,12 +37,23 @@ function quadrado(){
 function total(){
     let val = document.getElementById("valor").value;
     let ju = document.getElementById("juros").value;
+
+    if(!Number(val)){
+        alert("O valor deve ser um número.");
+        document.getElementById("valor").value = "";
+        document.getElementById("valor"). focus();
+        return
+    }
+
+    if(!Number(ju)){
+        alert("O valor deve ser um número.");
+        document.getElementById("valor").value = "";
+        document.getElementById("valor"). focus();
+        return
     let resultado = (val * ((ju/100)+1));
     document.write("O total é de: " + resultado);
-}
-// Para dividir usa a/
-// Calcular a média das 4 notas. Somas as 4 notas e dividir por 4.
-// Quanto falta para passar. pega 240 e subtrair as notas.
+    }
+
 function soma(){
     let n1 = document.getElementById("b1"). value;
     let n2 = document.getElementById("b2"). value;
