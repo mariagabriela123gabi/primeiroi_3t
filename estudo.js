@@ -37,48 +37,13 @@ function quadrado(){
 function total(){
     let val = document.getElementById("valor").value;
     let ju = document.getElementById("juros").value;
-
+    
     let t = document.getElementById("meses").value;
     let resultado = 0;
-    for(let m = 1; m < t; m++){
+    for(let m = 1; m <= t; m++){
         resultado = (val * ((ju/100)+1));
         val = resultado;
-        document.write("Mẽs " + m + "valor de " + val + "<br>");
-
+        document.write("Mês " + m + " valor de " + val + "<br>");
     }
-
-    if(!Number(val)){
-        alert("O valor deve ser um número.");
-        document.getElementById("valor").value = "";
-        document.getElementById("valor"). focus();
-        return
-    }
-
-    if(!Number(ju)){
-        alert("O valor deve ser um número.");
-        document.getElementById("valor").value = "";
-        document.getElementById("valor"). focus();
-        return
-    let resultado = (val * ((ju/100)+1));
     document.write("O total é de: " + resultado);
-    }
-
-function soma(){
-    let n1 = document.getElementById("b1"). value;
-    let n2 = document.getElementById("b2"). value;
-    let n3 = document.getElementById("b3"). value;
-    let n4 = document.getElementById("b4"). value;
-    let r = Number(n1) + Number(n2) + Number(n3) + Number(n4);
-    document.getElementById("resultado").innerHTML = r;
-
-}
-function média(){
-    let n1 = document.getElementById("b1"). value;
-    let n2 = document.getElementById("b2"). value;
-    let n3 = document.getElementById("b3"). value;
-    let n4 = document.getElementById("b4"). value;
-    let r = 240 - Number(n1) + Number(n2) + Number(n3) + Number(n4);
-    document.getElementById("resultado").innerHTML = r;
-
-    
 }
