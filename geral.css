@@ -1,1 +1,19 @@
+.calculadora {
+    background: black;
+    width: 200px;
+    padding: 30px;
+    color: white;
+}
+
+#btnCalc {
+    background: purple;
+    color: white;
+    padding: 2px;
+}
+#btnCalc:hover {
+    background: purple;
+    color: black;
+    cursor: pointer;
+}
+Footer
 
